@@ -2,11 +2,9 @@
 
 function About() {
     return (
-        <>
-            <div>
-                <p>About</p>
-            </div>
-        </>
+        <main className="page">
+            Mo Daijobu
+        </main>
     )
 }
 

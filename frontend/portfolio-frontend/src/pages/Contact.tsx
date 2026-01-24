@@ -2,11 +2,9 @@
 
 function Contact() {
     return (
-        <>
-            <div>
-                <p>Contact</p>
-            </div>
-        </>
+        <main className="page">
+            Ware Ware ga kitta
+        </main>
     )
 }
 
