@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Main Title */
+h1 {
+    @apply 
+    m-5
+    text-7xl
+    md:text-9xl
+    font-bold;
+}
+
+@supports (-webkit-background-clip: text) {
+    h1 {
+        background: var(--color-radient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        background-size: 300% auto;
+        animation: textgradient 20s linear infinite;
+    }
+
+    @keyframes textgradient {
+    from {
+      background-position: 0 center;
+    }
+    to {
+      background-position: 300% center;
+    }
+  }
+} 
+
+.sentence {
+    @apply p-5 m-5;
+}
