@@ -1,5 +1,5 @@
 
-import Hero from "../sections/Hero.tsx";
+import Hero from "../../pages/Hero.tsx";
 import Home from "../../pages/Home.tsx";
 import About from "../../pages/About.tsx";
 import Projects from "../../pages/Projects.tsx";
