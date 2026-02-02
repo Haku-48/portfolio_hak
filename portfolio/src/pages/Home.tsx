@@ -14,15 +14,24 @@ function Home() {
         En parallèle de ma troisième année de licence informatique, je développe continuellement mes compétences sur divers langages et outils pour
         transformer des idées en projets concrets.
       </p>
-      <div className="ctas"></div>
-      <div className="home_buttons">
-        <ButtonImg
-          img={"util/minutemailer.svg"}
-          id={""}
-          classname={""}
-          text={"Me contacter"}
-        />
+      <div className="ctas">
+        N'hésitez pas à me contacter où à jeter un coup d'oeil à mes différents projets.
+        <div className="home_buttons">
+          <ButtonImg
+            img={"util/minutemailer.svg"}
+            id={"#contact"}
+            classname={"home_button"}
+            text={"Me contacter"}
+          />
+          <ButtonImg
+            img={"util/files.svg"}
+            id={"#projects"}
+            classname="home_button"
+            text={"Mes projets"}
+          />
+        </div>
       </div>
+
     </main>
   );
 }

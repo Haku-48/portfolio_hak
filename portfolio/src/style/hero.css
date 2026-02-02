@@ -8,7 +8,7 @@ h1.main_title {
 }
 
 @supports (-webkit-background-clip: text) {
-  h1.main_title {
+  h1 {
     background: var(--color-radient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
