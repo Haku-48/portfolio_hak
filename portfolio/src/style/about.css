@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+#about {
+  @apply flex flex-col;
+}
+
+/* All of the title */
+.about_title {
+  @apply text-4xl md:text-5xl font-bold flex justify-center items-center;
+}
+
+.about_title h1 {
+  @apply h-20 flex items-center;
+}
+
+.about_subtitle {
+  @apply text-3xl md:text-4xl font-serif;
+  color: var(--color-primary);
+}
+
+.about_subsubtitle {
+  @apply relative z-10;
+}
+
+/* Differents sections */
+
+.parcours {
+}
+
+.skills {
+  @apply flex flex-row w-full border;
+}
+
+.langages {
+  @apply border;
+  width: 50%;
+}
+
+.tools {
+  @apply border;
+  width: 50%;
+}
+
+/* Part of the timeline */
+
+.skills_timeline {
+  @apply relative flex flex-col items-center gap-10 h-full border;
+}
+
+.skill_path {
+  @apply absolute top-0 h-full w-5 z-0  bg-amber-950;
+}
+
+.skill_class {
+}
+
+.left {
+}
+
+.right {
+}
+
+/* Part of a Skill item */
+.skill_item {
+  @apply relative z-10;
+  color: var(--color--secondary);
+  background-color: var(--color-background);
+}
+
+.skill_logo {
+  @apply w-10 h-10;
+}
+
+.skill_logo svg {
+  fill: var(--color-primary);
+}
+
+.skill_name {
+}
+
+.more_infos_skill {
+}
+
+.skill_description {
+}
+
+.skill_learned {
+}
+
+.skill_flag {
+}

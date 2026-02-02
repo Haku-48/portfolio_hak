@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Git",
+    "logo": "tools/git.svg",
+    "description": "",
+    "learned": "2023",
+    "flag": "École"
+  },
+  {
+    "name": "VSCode",
+    "logo": "tools/vscode.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "PostGreSQL",
+    "logo": "tools/postgresql.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "Node.js",
+    "logo": "tools/nodedotjs.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "École"
+  },
+  {
+    "name": "React",
+    "logo": "tools/react.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "École"
+  },
+  {
+    "name": "IntellijIDEA",
+    "logo": "tools/intellij.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "Temps-Libre"
+  },
+  {
+    "name": "Maven",
+    "logo": "tools/maven.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "École"
+  },
+  {
+    "name": "Cargo",
+    "logo": "tools/cargo.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "Temps-Libre"
+  },
+  {
+    "name": "CI/CD",
+    "logo": "tools/cicd.svg",
+    "description": "",
+    "learned": "2026",
+    "flag": "École"
+  },
+  {
+    "name": "TailwindCSS",
+    "logo": "tools/tailwindcss.svg",
+    "description": "",
+    "learned": "2026",
+    "flag": "Temps-Libre"
+  },
+  {
+    "name": "Vite",
+    "logo": "tools/vite.svg",
+    "description": "",
+    "learned": "2026",
+    "flag": "Temps-Libre"
+  },
+  {
+    "name": "MongoDB",
+    "logo": "tools/mongodb.svg",
+    "description": "",
+    "learned": "2026",
+    "flag": "École"
+  }
+]

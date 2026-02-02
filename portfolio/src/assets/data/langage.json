@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Bash",
+    "logo": "langage/gnubash.svg",
+    "description": "",
+    "learned": "2023",
+    "flag": "École"
+  },
+  {
+    "name": "Python",
+    "logo": "langage/python.svg",
+    "description": "",
+    "learned": "2023",
+    "flag": "École"
+  },
+  {
+    "name": "HTML",
+    "logo": "langage/html5.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "CSS",
+    "logo": "langage/css.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "langage/javascript.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "SQL",
+    "logo": "langage/sql.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "Java",
+    "logo": "langage/java.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "PHP",
+    "logo": "langage/php.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "C",
+    "logo": "langage/c.svg",
+    "description": "",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "Haskell",
+    "logo": "langage/haskell.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "École"
+  },
+  {
+    "name": "Rust",
+    "logo": "langage/rust.svg",
+    "description": "",
+    "learned": "2025",
+    "flag": "Temps-Libre"
+  },
+  {
+    "name": "TypeScript",
+    "logo": "langage/typescript.svg",
+    "description": "",
+    "learned": "2026",
+    "flag": "Temps-Libre"
+  }
+]

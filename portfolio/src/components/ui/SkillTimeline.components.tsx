@@ -3,28 +3,36 @@ import { useState, useEffect } from "react";
 import SkillItem from "./SkillItem.components";
 
 interface Skill {
-    name: string;
-    logo: string;
-    description: string;
-    learned: string
+  name: string;
+  logo: string;
+  description: string;
+  learned: string;
+  flag: string;
 }
 
 interface SkillTimelineProp {
-    file: Skill[];
+  file: Skill[];
 }
 
 function SkillTimeline({ file }: SkillTimelineProp) {
-    const topSkillClass = "top_skill_class";
-    const bottomSkillClass = "bottom_skill_class";
-    let i = 0;
-    return (
-        <div className="skills_timeline">
-            {file.map(skill => (
-                <div className={i % 2 == 0 ? topSkillClass : bottomSkillClass}>
-                    <SkillItem name={skill.name} logo={skill.logo} description="" learned="" />
-                </div>
-            ))}
+  const leftSkillClass = "left skill_class";
+  const rightSkillClass = "right skill_class";
+  let i = 0;
+  return (
+    <div className="skills_timeline">
+      <div className="skill_path"></div>
+      {file.map((skill) => (
+        <div className={i % 2 == 0 ? leftSkillClass : rightSkillClass}>
+          <SkillItem
+            name={skill.name}
+            logo={skill.logo}
+            description=""
+            learned=""
+            flag=""
+          />
         </div>
-    )
+      ))}
+    </div>
+  );
 }
 export default SkillTimeline;
