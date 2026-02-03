@@ -14,17 +14,17 @@ interface Skill {
 }
 
 import SkillTimeline from "../components/ui/SkillTimeline.components";
+import Flag from "../components/ui/Flag.components";
 
 function About() {
-
   const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
   const [svg, setSvg] = useState("");
 
   useEffect(() => {
     fetch(closeButton)
-      .then(res => res.text())
-      .then(setSvg)
-  }, [closeButton])
+      .then((res) => res.text())
+      .then(setSvg);
+  }, [closeButton]);
 
   return (
     <main className="page" id="about">
@@ -40,18 +40,38 @@ function About() {
       <div className="skills">
         <div className="langages">
           <h3 className="about_subsubtitle">Langages</h3>
-          <SkillTimeline file={langages} setSelectedSkill={(skill) => setSelectedSkill(skill)} />
+          <SkillTimeline
+            file={langages}
+            setSelectedSkill={(skill) => setSelectedSkill(skill)}
+          />
         </div>
         <div className="tools">
           <h3 className="about_subsubtitle">Outils</h3>
-          <SkillTimeline file={tools} setSelectedSkill={(skill) => setSelectedSkill(skill)} />
+          <SkillTimeline
+            file={tools}
+            setSelectedSkill={(skill) => setSelectedSkill(skill)}
+          />
         </div>
-        <div className={`more_infos_skill ${selectedSkill ? "block" : "hidden"}`}>
+        <div
+          className={`more_infos_skill ${selectedSkill ? "block" : "hidden"}`}
+        >
           <h2>{selectedSkill?.name}</h2>
           <div className="skill_description">{selectedSkill?.description}</div>
-          <div className="skill_learned">Début d'apprentisage en {selectedSkill?.learned}</div>
-          <div className="skill_flag">{selectedSkill?.flag}</div>
-          <div className="close_button" onClick={() => setSelectedSkill(null)} dangerouslySetInnerHTML={{ __html: svg }}></div>
+          <div className="skill_learned">
+            Début d'apprentisage en{" "}
+            <span className="font-extrabold">{selectedSkill?.learned}</span>
+          </div>
+
+          <Flag flagType={selectedSkill?.flag} />
+
+          <div
+            className="close_button"
+            onClick={() => {
+              setSelectedSkill(null);
+              document.body.style.overflow = "";
+            }}
+            dangerouslySetInnerHTML={{ __html: svg }}
+          ></div>
         </div>
       </div>
     </main>

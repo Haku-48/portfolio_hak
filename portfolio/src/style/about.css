@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 #about {
-  @apply flex flex-col;
+  @apply flex flex-col relative min-h-screen;
 }
 
 /* All of the title */
@@ -16,7 +16,7 @@
 }
 
 .about_subtitle {
-  @apply text-3xl md:text-4xl font-serif text-[var(--color-primary)];
+  @apply text-3xl md:text-4xl font-serif text-[var(--color-primary)] pb-5 md:pb-8;
 }
 
 .about_subsubtitle {
@@ -25,7 +25,9 @@
 
 /* Differents sections */
 
-.parcours {}
+.parcours {
+  @apply text-xl md:text-2xl;
+}
 
 .skills {
   @apply flex flex-col md:flex-row w-full;
@@ -94,18 +96,23 @@
 }
 
 .more_infos_skill {
-  @apply p-5 rounded-3xl w-full md:max-w-xl h-100 fixed top-50 left-50 translate-0.5 z-50 backdrop-blur-3xl transform-3d transition-all shadow-2xl;
+  @apply p-5 rounded-3xl w-full md:max-w-xl h-auto fixed top-50 left-50 translate-0.5 z-50 backdrop-blur-3xl transform-3d transition-all shadow-2xl;
 }
 
 .more_infos_skill h2 {
   @apply text-4xl md:text-5xl h-15 font-bold;
 }
 
-.skill_description {}
+.skill_description {
+  @apply m-5 mb-15 text-2xl md:text-3xl font-serif;
+}
 
-.skill_learned {}
+.skill_learned {
+  @apply fixed bottom-4 left-4;
+}
 
-.skill_flag {}
+.skill_flag {
+}
 
 .close_button {
   @apply fixed top-3 right-10 w-5 h-5;
@@ -117,5 +124,5 @@
 }
 
 .close_button svg {
-  fill: currentColor
+  fill: currentColor;
 }

@@ -4,11 +4,10 @@
 
 /* Main Title */
 h1.main_title {
-  @apply m-5 text-7xl md:text-9xl font-bold h-70;
+  @apply m-5 text-7xl md:text-9xl font-bold h-70 w-min whitespace-normal indent-8;
 }
 
 @supports (-webkit-background-clip: text) {
-
   h1,
   .more_infos_skill h2 {
     background: var(--color-radient);

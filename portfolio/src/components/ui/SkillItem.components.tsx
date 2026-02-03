@@ -25,11 +25,11 @@ function SkillItem({ name, logo, onClick }: SkillItemProp) {
       const top = rect.top + window.scrollY;
       const height = rect.height;
       const compute = () => {
-        return (window.scrollY + (window.innerHeight / 2) - top) / height;
-      }
+        return (window.scrollY + window.innerHeight / 2 - top) / height;
+      };
 
       if (compute() >= 0) {
-        setScale(1.10);
+        setScale(1.1);
       } else {
         setScale(1.0);
       }
@@ -37,18 +37,23 @@ function SkillItem({ name, logo, onClick }: SkillItemProp) {
       const onScroll = () => {
         const computed = compute();
         if (computed >= 0) {
-          setScale(1.10);
+          setScale(1.1);
         } else {
           setScale(1);
         }
-      }
+      };
       window.addEventListener("scroll", onScroll);
       return () => window.removeEventListener("scroll", onScroll);
     }
   }, [logo]);
 
   return (
-    <div className="skill_item" onClick={onClick} ref={cardRef} style={{ scale: scale }}>
+    <div
+      className="skill_item"
+      onClick={onClick}
+      ref={cardRef}
+      style={{ scale: scale }}
+    >
       <div
         className="skill_logo"
         dangerouslySetInnerHTML={{ __html: svg }}

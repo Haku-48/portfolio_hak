@@ -26,8 +26,8 @@ function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
       const top = rect.top + window.scrollY;
       const height = rect.height;
       const compute = () => {
-        return (window.scrollY + (window.innerHeight / 2) - top) / height;
-      }
+        return (window.scrollY + window.innerHeight / 2 - top) / height;
+      };
 
       if (compute() >= 0 && compute() <= 1) {
         setMlHeight(compute());
@@ -43,22 +43,26 @@ function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
       window.addEventListener("scroll", onScroll);
       return () => window.removeEventListener("scroll", onScroll);
     }
-  }, [lineRef])
+  }, [lineRef]);
 
   return (
     <div className="skills_timeline">
       <div className="skill_path" ref={lineRef}></div>
-      <div className="skill_path_fill" style={{ height: mlHeight * 100 + '%' }}></div>
-      {
-        file.map((skill) => (
-          <SkillItem
-            name={skill.name}
-            logo={skill.logo}
-            onClick={() => setSelectedSkill(skill)}
-          />
-        ))
-      }
-    </div >
+      <div
+        className="skill_path_fill"
+        style={{ height: mlHeight * 100 + "%" }}
+      ></div>
+      {file.map((skill) => (
+        <SkillItem
+          name={skill.name}
+          logo={skill.logo}
+          onClick={() => {
+            setSelectedSkill(skill);
+            document.body.style.overflow = "hidden";
+          }}
+        />
+      ))}
+    </div>
   );
 }
 export default SkillTimeline;
