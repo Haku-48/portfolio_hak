@@ -2,84 +2,84 @@
   {
     "name": "Git",
     "logo": "tools/git.svg",
-    "description": "",
+    "description": "Outils indispensable (à mes yeux comme à beaucoup d'autres) pour la gestion de versions et le suivi de projet.",
     "learned": "2023",
     "flag": "École"
   },
   {
     "name": "VSCode",
     "logo": "tools/vscode.svg",
-    "description": "",
+    "description": "Éditeur de code offrant une grande flexibilité grâce à ses nombreuses extensions.",
     "learned": "2024",
     "flag": "École"
   },
   {
     "name": "PostGreSQL",
     "logo": "tools/postgresql.svg",
-    "description": "",
+    "description": "Programme de gestion de base de donnée relationnelle permettant des requêtes SQL avancées.",
     "learned": "2024",
     "flag": "École"
   },
   {
     "name": "Node.js",
     "logo": "tools/nodedotjs.svg",
-    "description": "",
+    "description": "Plateforme de développement JavaScript open-source agissant côté serveur.",
     "learned": "2025",
     "flag": "École"
   },
   {
     "name": "React",
     "logo": "tools/react.svg",
-    "description": "",
+    "description": "Bibliothèque JavaScript open-source utilisée dans la création d'interfaces utilisateur dynamiques.",
     "learned": "2025",
     "flag": "École"
   },
   {
     "name": "IntellijIDEA",
     "logo": "tools/intellij.svg",
-    "description": "",
+    "description": "IDE utile pour le développement Java et le suivi de projets complexes.",
     "learned": "2025",
     "flag": "Temps-Libre"
   },
   {
     "name": "Maven",
     "logo": "tools/maven.svg",
-    "description": "",
+    "description": "Outil de gestion de dépendances et d'automatisation de production de projets Java",
     "learned": "2025",
     "flag": "École"
   },
   {
     "name": "Cargo",
     "logo": "tools/cargo.svg",
-    "description": "",
+    "description": "Outil de gestion de dépendances et d'automatisation de production de projets Rust",
     "learned": "2025",
     "flag": "Temps-Libre"
   },
   {
     "name": "CI/CD",
     "logo": "tools/cicd.svg",
-    "description": "",
+    "description": "Processus d'automatisation des tests permettant un déploiement serein.",
     "learned": "2026",
     "flag": "École"
   },
   {
     "name": "TailwindCSS",
     "logo": "tools/tailwindcss.svg",
-    "description": "",
+    "description": "Framework CSS utilitaire utilisant des règles de style déja définies.",
     "learned": "2026",
     "flag": "Temps-Libre"
   },
   {
     "name": "Vite",
     "logo": "tools/vite.svg",
-    "description": "",
+    "description": "Outil de build rapide pour projets front-end.",
     "learned": "2026",
     "flag": "Temps-Libre"
   },
   {
     "name": "MongoDB",
     "logo": "tools/mongodb.svg",
-    "description": "",
+    "description": "Base de données NoSQL orientée documents.",
     "learned": "2026",
     "flag": "École"
   }

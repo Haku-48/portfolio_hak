@@ -1,1 +1,2 @@
 - Améliorer les animations de scroll lors de l'appui d'un boutton sur la navbar
+- Ajouter le gradient au logo

@@ -8,22 +8,34 @@
   --color-secondary: #01010f;
   --color-accent: #ededfa;
   --color-background: #dadae8;
-  --color-radient: linear-gradient(
-    90deg,
-    hsl(244 63% 35%) 0%,
-    hsl(238 77% 37%) 8%,
-    hsl(233 89% 38%) 17%,
-    hsl(227 100% 40%) 25%,
-    hsl(211 100% 40%) 33%,
-    hsl(200 100% 39%) 42%,
-    hsl(221 100% 79%) 50%,
-    hsl(200 100% 39%) 58%,
-    hsl(211 100% 40%) 67%,
-    hsl(227 100% 40%) 75%,
-    hsl(233 89% 38%) 83%,
-    hsl(238 77% 37%) 92%,
-    hsl(244 63% 35%) 100%
-  );
+  --color-radient: linear-gradient(90deg,
+      hsl(244 63% 35%) 0%,
+      hsl(238 77% 37%) 8%,
+      hsl(233 89% 38%) 17%,
+      hsl(227 100% 40%) 25%,
+      hsl(211 100% 40%) 33%,
+      hsl(200 100% 39%) 42%,
+      hsl(221 100% 79%) 50%,
+      hsl(200 100% 39%) 58%,
+      hsl(211 100% 40%) 67%,
+      hsl(227 100% 40%) 75%,
+      hsl(233 89% 38%) 83%,
+      hsl(238 77% 37%) 92%,
+      hsl(244 63% 35%) 100%);
+  --color-radient-vertical: linear-gradient(to bottom,
+      hsl(244 63% 35%) 0%,
+      hsl(238 77% 37%) 7%,
+      hsl(233 89% 38%) 14%,
+      hsl(227 100% 40%) 21%,
+      hsl(211 100% 40%) 28%,
+      hsl(200 100% 39%) 35%,
+      hsl(221 100% 79%) 50%,
+      hsl(200 100% 39%) 65%,
+      hsl(211 100% 40%) 72%,
+      hsl(227 100% 40%) 79%,
+      hsl(233 89% 38%) 86%,
+      hsl(238 77% 37%) 93%,
+      hsl(244 63% 35%) 99%);
 }
 
 body {
@@ -55,9 +67,14 @@ html {
 }
 
 .logo_img {
-  @apply w-30 overflow-hidden rounded-lg;
+  @apply w-30 h-25 overflow-hidden rounded-lg flex justify-center items-center;
   will-change: filter;
   transition: filter 300ms;
+  color: var(--color-primary);
+}
+
+.logo_img svg {
+  fill: curr;
 }
 
 .logo_img:hover {

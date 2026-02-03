@@ -16,78 +16,106 @@
 }
 
 .about_subtitle {
-  @apply text-3xl md:text-4xl font-serif;
-  color: var(--color-primary);
+  @apply text-3xl md:text-4xl font-serif text-[var(--color-primary)];
 }
 
 .about_subsubtitle {
-  @apply relative z-10;
+  @apply text-2xl md:text-3xl relative z-10 font-serif text-[var(--color-primary)];
 }
 
 /* Differents sections */
 
-.parcours {
-}
+.parcours {}
 
 .skills {
-  @apply flex flex-row w-full border;
+  @apply flex flex-col md:flex-row w-full;
 }
 
 .langages {
-  @apply border;
+  @apply justify-center items-center flex flex-col gap-5 md:gap-10;
   width: 50%;
 }
 
 .tools {
-  @apply border;
+  @apply justify-center items-center flex flex-col gap-5 md:gap-10;
   width: 50%;
 }
 
 /* Part of the timeline */
 
 .skills_timeline {
-  @apply relative flex flex-col items-center gap-10 h-full border;
+  @apply relative flex flex-col items-center justify-center gap-10 h-full;
 }
 
 .skill_path {
-  @apply absolute top-0 h-full w-5 z-0  bg-amber-950;
+  @apply absolute top-0 h-full w-5 z-0;
+  background-color: var(--color-accent);
 }
 
-.skill_class {
+.skill_path_fill {
+  @apply absolute top-0 w-6 z-5 transition-all rounded-4xl;
+  background: var(--color-radient-vertical);
+  background-size: 100% 300%;
+  animation: gradientAnim 5s linear infinite;
 }
 
-.left {
-}
+@keyframes gradientAnim {
+  from {
+    background-position: center 0;
+  }
 
-.right {
+  to {
+    background-position: center 300%;
+  }
 }
 
 /* Part of a Skill item */
 .skill_item {
-  @apply relative z-10;
-  color: var(--color--secondary);
+  @apply relative z-10 flex flex-col justify-center items-center gap-2 w-32 h-32 rounded-2xl shadow-xl shadow-gray-900 transition-transform;
+  color: var(--color-secondary);
   background-color: var(--color-background);
 }
 
+.skill_item:hover {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
 .skill_logo {
-  @apply w-10 h-10;
+  @apply w-15 h-15;
 }
 
 .skill_logo svg {
-  fill: var(--color-primary);
+  fill: currentColor;
 }
 
 .skill_name {
+  @apply font-serif;
 }
 
 .more_infos_skill {
+  @apply p-5 rounded-3xl w-full md:max-w-xl h-100 fixed top-50 left-50 translate-0.5 z-50 backdrop-blur-3xl transform-3d transition-all shadow-2xl;
 }
 
-.skill_description {
+.more_infos_skill h2 {
+  @apply text-4xl md:text-5xl h-15 font-bold;
 }
 
-.skill_learned {
+.skill_description {}
+
+.skill_learned {}
+
+.skill_flag {}
+
+.close_button {
+  @apply fixed top-3 right-10 w-5 h-5;
+  color: var(--color-primary);
 }
 
-.skill_flag {
+.close_button:hover {
+  color: rgba(138, 10, 23, 0.88);
+}
+
+.close_button svg {
+  fill: currentColor
 }
