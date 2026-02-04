@@ -15,6 +15,7 @@ interface Skill {
 
 import SkillTimeline from "../components/ui/SkillTimeline.components";
 import Flag from "../components/ui/Flag.components";
+import FormationList from "../components/ui/FormationList.components";
 
 function About() {
   const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
@@ -34,7 +35,14 @@ function About() {
 
       <div className="parcours">
         <h2 className="about_subtitle">Mon parcours</h2>
-        <p>Je suis juste All Might</p>
+        <p>
+          Doté d'un esprit curieux et d'une passion pour le développement, j'ai
+          construit mes compétence à travers une licence d'informatique et
+          beaucoup de pratique personnelle. J'accorde une grande importance au
+          suivi et à la compréhension des nouvelles technologies et à leur
+          expérimentations à travers des projets concrets.
+        </p>
+        <FormationList />
       </div>
       <h2 className="about_subtitle">Mes compétences</h2>
       <div className="skills">

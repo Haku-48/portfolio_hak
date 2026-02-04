@@ -29,8 +29,63 @@
   @apply text-xl md:text-2xl;
 }
 
+/* Formations */
+.formation_list {
+  @apply flex flex-col mt-8 md:mt-12 gap-6 text-lg md:items-center mb-10;
+}
+
+.formation_list h3 {
+  @apply text-3xl md:text-4xl font-thin;
+}
+
+.formation {
+  @apply flex flex-col md:flex-row justify-center gap-5 md:gap-10 items-center md:items-baseline;
+}
+
+.formation > div {
+  @apply flex flex-col w-[50%] justify-center gap-2 md:gap-5;
+}
+
+.formation_title {
+  @apply w-[100%] md:w-[90%] text-2xl md:text-3xl font-bold;
+}
+
+.formation_dates {
+  @apply flex items-end justify-end pr-4;
+}
+
+.formation_dates span {
+  @apply font-bold;
+}
+
+.formation_goals ul {
+  @apply list-disc list-inside font-mono;
+}
+
+.formation div:nth-child(2) {
+  @apply flex flex-col md:flex-row;
+}
+
+.formation_place {
+  @apply p-4;
+}
+
+.formation_place h4 {
+  @apply text-xl p-2 font-serif text-[varr(--color-secondary)];
+}
+
+.formation_place iframe {
+  @apply w-[100%] md:w-[130%] xl:w-100 h-70 lg:h-100 rounded-3xl;
+}
+
+.formation_sentence {
+  @apply p-5 items-center font-serif;
+}
+
+/* Skills */
+
 .skills {
-  @apply flex flex-col md:flex-row w-full;
+  @apply flex flex-col justify-center items-center md:flex-row w-full;
 }
 
 .langages {
@@ -58,7 +113,7 @@
   @apply absolute top-0 w-6 z-5 transition-all rounded-4xl;
   background: var(--color-radient-vertical);
   background-size: 100% 300%;
-  animation: gradientAnim 5s linear infinite;
+  animation: gradientAnim 3s linear infinite;
 }
 
 @keyframes gradientAnim {
@@ -89,6 +144,11 @@
 
 .skill_logo svg {
   fill: currentColor;
+  object-view-box: "0 0 100 150";
+}
+
+.skill_logo svg path {
+  fill: currentColor;
 }
 
 .skill_name {
@@ -109,9 +169,6 @@
 
 .skill_learned {
   @apply fixed bottom-4 left-4;
-}
-
-.skill_flag {
 }
 
 .close_button {

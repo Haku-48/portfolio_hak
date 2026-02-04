@@ -22,9 +22,9 @@ function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
 
   useEffect(() => {
     if (lineRef.current) {
-      const rect = lineRef.current.getBoundingClientRect();
-      const top = rect.top + window.scrollY;
-      const height = rect.height;
+      let rect = lineRef.current.getBoundingClientRect();
+      let top = rect.top + window.scrollY;
+      let height = rect.height;
       const compute = () => {
         return (window.scrollY + window.innerHeight / 2 - top) / height;
       };
@@ -37,11 +37,25 @@ function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
         const computed = compute();
         if (computed >= 0 && computed <= 1) {
           setMlHeight(computed);
+        } else {
+          setMlHeight(0);
         }
       };
 
+      const computeSize = () => {
+        if (lineRef.current) {
+          rect = lineRef.current.getBoundingClientRect();
+          top = rect.top + window.scrollY;
+          height = rect.height;
+        }
+      };
+
+      window.addEventListener("resize", computeSize);
       window.addEventListener("scroll", onScroll);
-      return () => window.removeEventListener("scroll", onScroll);
+      return () => {
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", computeSize);
+      };
     }
   }, [lineRef]);
 

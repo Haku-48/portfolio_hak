@@ -21,9 +21,9 @@ function SkillItem({ name, logo, onClick }: SkillItemProp) {
       .then(setSvg);
 
     if (cardRef.current) {
-      const rect = cardRef.current.getBoundingClientRect();
-      const top = rect.top + window.scrollY;
-      const height = rect.height;
+      let rect = cardRef.current.getBoundingClientRect();
+      let top = rect.top + window.scrollY;
+      let height = rect.height;
       const compute = () => {
         return (window.scrollY + window.innerHeight / 2 - top) / height;
       };
@@ -34,6 +34,14 @@ function SkillItem({ name, logo, onClick }: SkillItemProp) {
         setScale(1.0);
       }
 
+      const computeSize = () => {
+        if (cardRef.current) {
+          rect = cardRef.current.getBoundingClientRect();
+          top = rect.top + window.scrollY;
+          height = rect.height;
+        }
+      };
+
       const onScroll = () => {
         const computed = compute();
         if (computed >= 0) {
@@ -43,7 +51,11 @@ function SkillItem({ name, logo, onClick }: SkillItemProp) {
         }
       };
       window.addEventListener("scroll", onScroll);
-      return () => window.removeEventListener("scroll", onScroll);
+      window.addEventListener("resize", computeSize);
+      return () => {
+        window.removeEventListener("scroll", onScroll);
+        window.removeEventListener("resize", computeSize);
+      };
     }
   }, [logo]);
 

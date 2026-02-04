@@ -52,11 +52,11 @@ html {
 
 /* Navbar rules */
 .navbar {
-  @apply font-serif text-2xl flex flex-col md:flex-row ml-3 md:ml-7 mr-3 md:mr-7 z-50 max-w-7xl items-center mx-auto transition-all duration-500 ease-in-out;
+  @apply font-serif text-2xl flex flex-col md:flex-row ml-3 md:ml-7 mr-3 md:mr-7 z-50 max-w-7xl items-center mx-auto transition-all duration-500 ease-in md:ease-in-out;
 }
 
 .nav_button {
-  @apply p-4 md:p-6 transition-shadow overflow-visible rounded-xl hover:bg-sky-100 hover:text-indigo-950;
+  @apply p-4 md:p-6 transition-shadow overflow-visible rounded-xl;
 }
 
 .nav_button:hover {
@@ -66,7 +66,7 @@ html {
 }
 
 .nav_button_list {
-  @apply flex flex-col md:flex-row gap-2 md:gap-7 pl-3 md:pl-8;
+  @apply grid grid-cols-2 md:flex md:flex-row gap-2 md:gap-7 pl-3 md:pl-8;
   color: var(--color-secondary);
 }
 
@@ -74,11 +74,14 @@ html {
   @apply w-30 h-25 overflow-hidden rounded-lg flex justify-center items-center;
   will-change: filter;
   transition: filter 300ms;
-  color: var(--color-primary);
 }
 
 .logo_img svg {
-  fill: curr;
+  fill: currentColor;
+}
+
+.logo_img svg path {
+  fill: currentColor;
 }
 
 .logo_img:hover {
@@ -87,7 +90,7 @@ html {
 
 /* Règles générales pour les différentes pages */
 .page {
-  @apply z-0 min-h-screen flex flex-col md:flex-row gap-4 md:gap-6 p-3 md:p-9 md:pt-40;
+  @apply z-0 min-h-screen flex flex-col md:flex-row gap-4 md:gap-6 p-3 md:p-9 pt-70 md:pt-40;
 }
 
 /* Règles générales pour l'élément footer */
@@ -108,3 +111,4 @@ html {
 .Temps-Libre {
   @apply bg-[var(--color-background)] text-[var(--color-primary)];
 }
+

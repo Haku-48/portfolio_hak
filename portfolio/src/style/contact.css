@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Règles principales */
+#contact {
+  @apply flex flex-col md:gap-10;
+}
+
+/* Main title */
+.contact_title {
+  @apply text-4xl md:text-5xl font-bold flex w-auto justify-center;
+}
+
+/* Text */
+.contact_text {
+  @apply m-15 gap-15;
+}
+
+.contact_text p {
+  @apply mt-10 text-2xl font-mono;
+}
+
+/* buttons */
+.contact_buttons {
+  @apply flex flex-col md:flex-row items-center justify-center gap-10;
+}

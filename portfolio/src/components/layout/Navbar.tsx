@@ -28,7 +28,7 @@ function Navbar() {
           <Logo />
         </div>
         <div
-          className={` nav_button_list transition-all duration-500 ease-in-out origin-left ${isCollapsed ? "opacity-0 scale-0 -translate-x-10 pointer-events-none" : "opacity-100 scale-100 translate-x-0"}`}
+          className={` nav_button_list transition-all duration-500 ease-in-out origin-top md:origin-left ${isCollapsed ? "opacity-0 scale-0 -translate-x-10 pointer-events-none" : "opacity-100 scale-100 translate-x-0"}`}
         >
           <Button id={"#home"} classname={"nav_button"} text={"Accueil"} />
           <Button id={"#projects"} classname={"nav_button"} text={"Projets"} />
