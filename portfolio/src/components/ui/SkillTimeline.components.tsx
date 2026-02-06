@@ -37,8 +37,6 @@ function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
         const computed = compute();
         if (computed >= 0 && computed <= 1) {
           setMlHeight(computed);
-        } else {
-          setMlHeight(0);
         }
       };
 
