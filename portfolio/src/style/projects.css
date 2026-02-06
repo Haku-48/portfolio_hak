@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Main rules for the Project page */
+#projects {
+    @apply flex flex-col relative min-h-screen;
+}
+
+/* Title */
+.projects_title {
+    @apply text-4xl md:text-5xl font-bold flex justify-center items-center;
+}
+
+.projects_title h1 {
+    @apply h-20;
+}
+
+
+.projects_heads_viewport {
+    @apply flex flex-row overflow-x-auto ml-4 md:ml-6 mr-4 md:mr-6 border;
+}
+
+.projects_heads_track {
+    @apply flex transform;
+}
+
+.project_head {
+    @apply border-t border-l border-r p-7 pt-4 pb-4 rounded-t-2xl font-bold font-serif;
+}
