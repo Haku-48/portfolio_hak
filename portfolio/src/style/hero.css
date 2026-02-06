@@ -8,6 +8,7 @@ h1.main_title {
 }
 
 @supports (-webkit-background-clip: text) {
+
   h1,
   .more_infos_skill h2,
   .formation_title {

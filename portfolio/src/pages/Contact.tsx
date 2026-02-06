@@ -42,7 +42,7 @@ function Contact() {
         <ButtonImg
           img={"util/location.svg"}
           id={
-            "https://www.google.com/search?client=ubuntu-sn&channel=fs&q=loos"
+            "https://maps.app.goo.gl/CT81sjG9fZ61gDgFA"
           }
           classname={"contact_button"}
           text={"Loos"}
