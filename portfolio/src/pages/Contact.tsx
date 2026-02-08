@@ -24,6 +24,7 @@ function Contact() {
           id={"https://github.com/Haku-48"}
           classname={"contact_button"}
           text={"Haku-48"}
+          onSite={false}
         />
         <ButtonImg
           img={"util/mail.svg"}
@@ -32,20 +33,21 @@ function Contact() {
           }
           classname={"contact_button"}
           text={"Mail"}
+          onSite={false}
         />
         <ButtonImg
           img={"util/linkedin.svg"}
           id={"https://www.linkedin.com/in/guillaume-goetghebeur-766a72242/"}
           classname={"contact_button"}
           text={"Guillaume"}
+          onSite={false}
         />
         <ButtonImg
           img={"util/location.svg"}
-          id={
-            "https://maps.app.goo.gl/CT81sjG9fZ61gDgFA"
-          }
+          id={"https://maps.app.goo.gl/CT81sjG9fZ61gDgFA"}
           classname={"contact_button"}
           text={"Loos"}
+          onSite={false}
         />
       </div>
     </main>

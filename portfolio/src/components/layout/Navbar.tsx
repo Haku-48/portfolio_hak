@@ -30,10 +30,10 @@ function Navbar() {
         <div
           className={` nav_button_list transition-all duration-500 ease-in-out origin-top md:origin-left ${isCollapsed ? "opacity-0 scale-0 -translate-x-10 pointer-events-none" : "opacity-100 scale-100 translate-x-0"}`}
         >
-          <Button id={"#home"} classname={"nav_button"} text={"Accueil"} />
-          <Button id={"#projects"} classname={"nav_button"} text={"Projets"} />
-          <Button id={"#about"} classname={"nav_button"} text={"À propos"} />
-          <Button id={"#contact"} classname={"nav_button"} text={"Contact"} />
+          <Button id={"home"} classname={"nav_button"} text={"Accueil"} />
+          <Button id={"projects"} classname={"nav_button"} text={"Projets"} />
+          <Button id={"about"} classname={"nav_button"} text={"À propos"} />
+          <Button id={"contact"} classname={"nav_button"} text={"Contact"} />
         </div>
       </div>
     </nav>

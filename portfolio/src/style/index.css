@@ -112,3 +112,6 @@ html {
   @apply bg-[var(--color-background)] text-[var(--color-primary)];
 }
 
+.clickable {
+  @apply w-auto hover:cursor-pointer flex flex-col justify-center items-center ;
+}

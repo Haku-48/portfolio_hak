@@ -8,16 +8,24 @@ function Logo() {
 
   useEffect(() => {
     fetch(HakuLogo)
-      .then(res => res.text())
+      .then((res) => res.text())
       .then(setSvg);
-  })
+  });
 
   return (
-    <a href="#">
+    <div
+      className="clickable"
+      onClick={() =>
+        document.querySelector("body")?.scrollIntoView({ behavior: "smooth" })
+      }
+    >
       <div className="nav_button">
-        <div className="logo_img" dangerouslySetInnerHTML={{ __html: svg }}></div>
+        <div
+          className="logo_img"
+          dangerouslySetInnerHTML={{ __html: svg }}
+        ></div>
       </div>
-    </a>
+    </div>
   );
 }
 

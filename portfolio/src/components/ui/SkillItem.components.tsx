@@ -8,7 +8,6 @@ interface SkillItemProp {
 }
 
 function SkillItem({ name, logo, onClick }: SkillItemProp) {
-  //const [focus, setFocus] = useState(false);
   const [svg, setSvg] = useState("");
 
   const cardRef = useRef<HTMLDivElement>(null);
@@ -61,7 +60,7 @@ function SkillItem({ name, logo, onClick }: SkillItemProp) {
 
   return (
     <div
-      className="skill_item"
+      className="skill_item clickable"
       onClick={onClick}
       ref={cardRef}
       style={{ scale: scale }}

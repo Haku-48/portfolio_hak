@@ -26,7 +26,7 @@
 /* Differents sections */
 
 .parcours {
-  @apply text-xl md:text-2xl;
+  @apply text-xl md:text-2xl font-serif;
 }
 
 /* Formations */
@@ -47,7 +47,7 @@
 }
 
 .formation_title {
-  @apply w-[100%] md:w-[90%] text-2xl md:text-3xl font-bold;
+  @apply w-full md:w-[90%] text-2xl md:text-3xl font-bold;
 }
 
 .formation_dates {
@@ -75,7 +75,7 @@
 }
 
 .formation_place iframe {
-  @apply w-[100%] md:w-[130%] xl:w-100 h-70 lg:h-100 rounded-3xl;
+  @apply w-full md:w-[130%] xl:w-100 h-70 lg:h-100 rounded-3xl;
 }
 
 .formation_sentence {
@@ -172,7 +172,7 @@
 }
 
 .close_button {
-  @apply fixed top-3 right-10 w-5 h-5;
+  @apply fixed top-3 right-10 w-5 h-5 z-10001;
   color: var(--color-primary);
 }
 

@@ -73,7 +73,7 @@ function About() {
           <Flag flagType={selectedSkill?.flag} />
 
           <div
-            className="close_button"
+            className="close_button hover:cursor-pointer"
             onClick={() => {
               setSelectedSkill(null);
               document.body.style.overflow = "";

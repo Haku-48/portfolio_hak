@@ -7,11 +7,14 @@ interface ButtonProps {
 
 function Button({ id, classname, text }: ButtonProps) {
   return (
-    <a href={`${id}`}>
-      <div className={`${classname}`}>
-        <p>{text}</p>
-      </div>
-    </a>
+    <div
+      className={`${classname} clickable`}
+      onClick={() =>
+        document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
+      }
+    >
+      <p>{text}</p>
+    </div>
   );
 }
 export default Button;
