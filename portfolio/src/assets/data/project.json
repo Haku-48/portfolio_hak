@@ -46,7 +46,7 @@
   {
     "name": "S.L.V",
     "picture": "projects/slv.png",
-    "description": "Projet de groupe visant à mettre en pratique les design patterns de la Conception Orientée Objet",
+    "description": "Projet de groupe visant à mettre en pratique les design patterns de la Conception Orientée Objet à travers un Système de Location de Véhicule",
     "start": "09/2025",
     "end": "12/2025",
     "langages": ["Java"],
