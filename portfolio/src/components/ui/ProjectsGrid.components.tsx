@@ -62,7 +62,7 @@ function ProjectsGrid() {
             <div className="project_techno">
               <div className="project_langages">
                 {selectedProject?.langages &&
-                selectedProject?.langages?.length > 1
+                  selectedProject?.langages?.length > 1
                   ? "Langages : "
                   : "Langage : "}
                 {selectedProject?.langages?.map((langage, index) => (
