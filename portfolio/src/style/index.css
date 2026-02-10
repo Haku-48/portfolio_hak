@@ -1,0 +1,117 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/** Main Var for all the portfolio */
+:root {
+  --color-primary: #0e0e96;
+  --color-secondary: #01010f;
+  --color-accent: #ededfa;
+  --color-background: #dadae8;
+  --color-radient: linear-gradient(
+    90deg,
+    hsl(244 63% 35%) 0%,
+    hsl(238 77% 37%) 8%,
+    hsl(233 89% 38%) 17%,
+    hsl(227 100% 40%) 25%,
+    hsl(211 100% 40%) 33%,
+    hsl(200 100% 39%) 42%,
+    hsl(221 100% 79%) 50%,
+    hsl(200 100% 39%) 58%,
+    hsl(211 100% 40%) 67%,
+    hsl(227 100% 40%) 75%,
+    hsl(233 89% 38%) 83%,
+    hsl(238 77% 37%) 92%,
+    hsl(244 63% 35%) 100%
+  );
+  --color-radient-vertical: linear-gradient(
+    to bottom,
+    hsl(244 63% 35%) 0%,
+    hsl(238 77% 37%) 7%,
+    hsl(233 89% 38%) 14%,
+    hsl(227 100% 40%) 21%,
+    hsl(211 100% 40%) 28%,
+    hsl(200 100% 39%) 35%,
+    hsl(221 100% 79%) 50%,
+    hsl(200 100% 39%) 65%,
+    hsl(211 100% 40%) 72%,
+    hsl(227 100% 40%) 79%,
+    hsl(233 89% 38%) 86%,
+    hsl(238 77% 37%) 93%,
+    hsl(244 63% 35%) 99%
+  );
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar rules */
+.navbar {
+  @apply font-serif text-2xl flex flex-col md:flex-row ml-3 md:ml-7 mr-3 md:mr-7 z-50 max-w-7xl items-center mx-auto transition-all duration-500 ease-in md:ease-in-out;
+}
+
+.nav_button {
+  @apply p-4 md:p-6 transition-shadow overflow-visible rounded-xl;
+}
+
+.nav_button:hover {
+  box-shadow: 0 20px 25px -5px var(--color-secondary);
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
+.nav_button_list {
+  @apply grid grid-cols-2 md:flex md:flex-row gap-2 md:gap-7 pl-3 md:pl-8;
+  color: var(--color-secondary);
+}
+
+.logo_img {
+  @apply w-30 h-25 overflow-hidden rounded-lg flex justify-center items-center;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo_img svg {
+  fill: currentColor;
+}
+
+.logo_img svg path {
+  fill: currentColor;
+}
+
+.logo_img:hover {
+  filter: drop-shadow(5 5 6em #ff0000aa);
+}
+
+/* Règles générales pour les différentes pages */
+.page {
+  @apply z-0 min-h-screen flex flex-col md:flex-row gap-4 md:gap-6 p-3 md:p-9 pt-70 md:pt-40;
+}
+
+/* Règles générales pour l'élément footer */
+.footer {
+  @apply flex flex-col md:flex-row gap-5 md:gap-10 items-center justify-center border-t border-gray-300 text-gray-400 font-extralight;
+}
+
+/* Règles pour les flag */
+
+.flag {
+  @apply p-2 bottom-4 right-4 fixed justify-center items-center font-serif text-xl md:text-2xl rounded-4xl  w-auto;
+}
+
+.École {
+  @apply bg-[var(--color-primary)] text-[var(--color-accent)];
+}
+
+.Temps-Libre {
+  @apply bg-[var(--color-background)] text-[var(--color-primary)];
+}
+
+.clickable {
+  @apply w-auto hover:cursor-pointer flex flex-col justify-center items-center ;
+}

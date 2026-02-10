@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Bash",
+    "logo": "langage/gnubash.svg",
+    "description": "Automatisation de tâches et scripts en environnement Unix.",
+    "learned": "2023",
+    "flag": "École"
+  },
+  {
+    "name": "Python",
+    "logo": "langage/python.svg",
+    "description": "Langage interprété utilisé pour l'écriture de scripts, l'implémentation d'algorithme et le traitement de données.",
+    "learned": "2023",
+    "flag": "École"
+  },
+  {
+    "name": "HTML",
+    "logo": "langage/html5.svg",
+    "description": "Langage de balise utile pour la structure sémantique de pages web.",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "CSS",
+    "logo": "langage/css.svg",
+    "description": "Langage de feuille de style permettant une mise en page responsive, des animations et des designs UI pour les pages web.",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "langage/javascript.svg",
+    "description": "Langage interprété permettant l'interaction avec les pages et applications web.",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "SQL",
+    "logo": "langage/sql.svg",
+    "description": "Langage normalisé servant à la conception et aux requêtes de base de données relationnelles.",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "Java",
+    "logo": "langage/java.svg",
+    "description": "Langage orienté objet accés sur le développement d'applications robustes. Le meilleur langage (selon moi biensûr).",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "PHP",
+    "logo": "langage/php.svg",
+    "description": "Langage de programmation orienté backend qui permet la génération de contenu dynamique.",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "C",
+    "logo": "langage/c.svg",
+    "description": "Programmation bas niveau avec gestion de mémoire.",
+    "learned": "2024",
+    "flag": "École"
+  },
+  {
+    "name": "Haskell",
+    "logo": "langage/haskell.svg",
+    "description": "Langage de programmation fonctionnelle utilisant une logique déclarative.",
+    "learned": "2025",
+    "flag": "École"
+  },
+  {
+    "name": "Rust",
+    "logo": "langage/rust.svg",
+    "description": "Programmation système sûre et performante qui permet plus de flexibilité sur la gestion de mémoire.",
+    "learned": "2025",
+    "flag": "Temps-Libre"
+  },
+  {
+    "name": "TypeScript",
+    "logo": "langage/typescript.svg",
+    "description": "Considéré comme une extension de JavaScript, utilisant des types déclarés pour une programmation plus sûre.",
+    "learned": "2026",
+    "flag": "Temps-Libre"
+  }
+]

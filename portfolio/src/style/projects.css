@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+/* Main rules for the Project page */
+#projects {
+  @apply flex flex-col relative min-h-screen;
+}
+
+/* Title */
+.projects_title {
+  @apply text-4xl md:text-5xl font-bold flex justify-center items-center;
+}
+
+.projects_title h1 {
+  @apply h-15;
+}
+
+/* Sentence */
+.projects_sentence {
+  @apply flex justify-center items-center text-2xl font-extralight font-mono;
+}
+
+/* Grid */
+.projects_grid {
+  @apply flex flex-col justify-center gap-5 md:gap-10 font-bold text-2xl font-serif;
+}
+
+/* Projects Heads */
+.projects_heads {
+  @apply w-full pl-2 grid grid-cols-[repeat(auto-fit,minmax(210px,1fr))] gap-5 md:gap-10;
+}
+
+/* A Project Head */
+.project_head {
+  @apply flex items-center justify-center w-40 h-40 border rounded-3xl hover:cursor-pointer text-(--color-secondary) hover:text-(--color-primary);
+}
+
+.project_head_name {
+  @apply bg-(--color-background) font-bold font-serif rounded-xl w-auto flex items-center justify-center text-xl;
+}
+
+/* The selected project */
+
+.project_selected {
+  @apply fixed top-150 lg:top-135 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] lg:h-[80vh] z-100 p-5 rounded-3xl backdrop-blur-3xl transition-all shadow-[var(--color-primary)] pointer-events-auto;
+}
+
+.project_selected img {
+  @apply rounded-2xl;
+}
+
+.project_selected .close_button {
+  @apply top-0 right-4;
+}
+
+.project_more {
+  @apply relative w-full h-full;
+}
+
+.project_more img {
+  @apply w-full h-full object-cover rounded-2xl;
+}
+
+.project_infos {
+  @apply absolute bottom-6 left-6 z-20 max-w-[70%] p-5 bg-[var(--color-secondary)] rounded-2xl text-[var(--color-accent)] text-xl;
+}
+
+.project_name {
+  @apply absolute top-2 left-1/2 -translate-x-1/2 inline-flex items-center justify-center px-6 py-3 border-[var(--color-secondary)] border-2 bg-[var(--color-accent)] rounded-full text-[var(--color-primary)] font-extrabold text-3xl z-20;
+}
+
+.project_more_infos {
+  @apply absolute right-3 bottom-6 flex flex-col gap-5;
+}
+
+.project_more_infos .flag {
+  @apply static p-0 text-base rounded-2xl justify-center items-center flex font-bold;
+}
+
+.project_more_infos .button_img {
+  @apply w-auto h-20 bg-[var(--color-background)];
+}
+
+.error {
+  @apply h-full flex flex-col pt-10 gap-10 lg:hidden;
+}
