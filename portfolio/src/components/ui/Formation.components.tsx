@@ -1,1 +1,0 @@
-/** An object to represent a Formation */

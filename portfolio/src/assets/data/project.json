@@ -1,5 +1,38 @@
 [
   {
+    "name" : "Image Blur",
+    "picture" : "projects/image_blur.png",
+    "description" : "Projet de première année. Flouteur d'images en Python",
+    "start" : "03/2024",
+    "end" : "05/2024",
+    "langages" : ["Python"],
+    "tools" : [],
+    "link" : "https://github.com/Haku-48/image_blur",
+    "flag" : "École"
+  },
+  {
+    "name": "Ares / Demeter",
+    "picture": "projects/ares-demeter.png",
+    "description": "Projet de groupe sur le développement de deux jeux de plateau en Java",
+    "start": "01/2025",
+    "end": "05/2025",
+    "langages": ["Java"],
+    "tools": ["Git"],
+    "link": "https://github.com/Haku-48/ares-demeter",
+    "flag": "École"
+  },
+  {
+    "name": "S.L.V",
+    "picture": "projects/slv.png",
+    "description": "Projet de groupe visant à mettre en pratique les design patterns de la Conception Orientée Objet à travers un Système de Location de Véhicule",
+    "start": "09/2025",
+    "end": "12/2025",
+    "langages": ["Java"],
+    "tools": ["Git"],
+    "link": "https://github.com/Haku-48/projet_coo",
+    "flag": "École"
+  },
+  {
     "name": "Port-Scanner",
     "picture": "projects/port-scanner.png",
     "description": "Analyseur d'activité de ports en Python",
@@ -17,20 +50,9 @@
     "start": "12/2025",
     "end": "12/2025",
     "langages": ["Haskell"],
-    "tools": [""],
+    "tools": [],
     "link": "https://github.com/Haku-48/minesweeper",
     "flag": "Temps-Libre"
-  },
-  {
-    "name": "Ares / Demeter",
-    "picture": "projects/ares-demeter.png",
-    "description": "Projet de groupe sur le développement de deux jeux de plateau en Java",
-    "start": "01/2025",
-    "end": "05/2025",
-    "langages": ["Java"],
-    "tools": ["Git"],
-    "link": "https://github.com/Haku-48/ares-demeter",
-    "flag": "École"
   },
   {
     "name": "Sudoku",
@@ -44,25 +66,14 @@
     "flag": "Temps-Libre"
   },
   {
-    "name": "S.L.V",
-    "picture": "projects/slv.png",
-    "description": "Projet de groupe visant à mettre en pratique les design patterns de la Conception Orientée Objet à travers un Système de Location de Véhicule",
-    "start": "09/2025",
-    "end": "12/2025",
-    "langages": ["Java"],
-    "tools": ["Git"],
-    "link": "https://github.com/Haku-48/projet_coo",
-    "flag": "École"
-  },
-  {
     "name": "Portfolio",
     "picture": "projects/portfolio.png",
     "description": "Vous êtes dessus !",
     "start": "01/2025",
     "end": "02/2025",
     "langages": ["TypeScript"],
-    "tools": ["Vite", "TailwindCSS", "Node.js"],
+    "tools": ["Vite", "TailwindCSS", "Node.js", "React"],
     "link": "https://github.com/Haku-48/projet_coo",
-    "flag": "École"
+    "flag": "Temps-Libre"
   }
 ]
