@@ -1,7 +1,7 @@
 [
   {
     "name": "Image Blur",
-    "picture": "projects/image_blur.png",
+    "picture": "projects/image_blur.webp",
     "description": "Projet de première année. Flouteur d'images en Python",
     "start": "03/2024",
     "end": "05/2024",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Ares / Demeter",
-    "picture": "projects/ares-demeter.png",
+    "picture": "projects/ares-demeter.webp",
     "description": "Projet de groupe sur le développement de deux jeux de plateau en Java",
     "start": "01/2025",
     "end": "05/2025",
@@ -23,7 +23,7 @@
   },
   {
     "name": "S.L.V",
-    "picture": "projects/slv.png",
+    "picture": "projects/slv.webp",
     "description": "Projet de groupe visant à mettre en pratique les design patterns de la Conception Orientée Objet à travers un Système de Location de Véhicule",
     "start": "09/2025",
     "end": "12/2025",
@@ -34,7 +34,7 @@
   },
   {
     "name": "Port-Scanner",
-    "picture": "projects/port-scanner.png",
+    "picture": "projects/port-scanner.webp",
     "description": "Analyseur d'activité de ports en Python",
     "start": "11/2025",
     "end": "11/2025",
@@ -45,7 +45,7 @@
   },
   {
     "name": "Minesweeper",
-    "picture": "projects/minesweeper.png",
+    "picture": "projects/minesweeper.webp",
     "description": "Célèbre jeu Minesweeper (Démineur) en TUI à l'aide de la librairie Brick d'Haskell",
     "start": "12/2025",
     "end": "12/2025",
@@ -56,7 +56,7 @@
   },
   {
     "name": "Sudoku",
-    "picture": "projects/sudoku.png",
+    "picture": "projects/sudoku.webp",
     "description": "Apprentissage du langage Rust par le développement du célèbre jeu casse-tête Sudoku",
     "start": "01/2026",
     "end": "01/2026",
@@ -67,7 +67,7 @@
   },
   {
     "name": "Portfolio",
-    "picture": "projects/portfolio.png",
+    "picture": "projects/portfolio.webp",
     "description": "Vous êtes dessus !",
     "start": "01/2025",
     "end": "02/2025",

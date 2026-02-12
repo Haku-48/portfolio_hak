@@ -42,7 +42,7 @@
   @apply flex flex-col md:flex-row justify-center gap-5 md:gap-10 items-center md:items-baseline;
 }
 
-.formation > div {
+.formation>div {
   @apply flex flex-col w-[50%] justify-center gap-2 md:gap-5;
 }
 
@@ -180,6 +180,6 @@
   color: rgba(138, 10, 23, 0.88);
 }
 
-.close_button svg {
+.close_button svg path {
   fill: currentColor;
 }

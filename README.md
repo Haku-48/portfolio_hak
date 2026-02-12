@@ -17,6 +17,11 @@ Aprés avoir commencé à développer un portfolio en **HTML+CSS+Javascript**, j
 
 TailwindCSS implémente des règles qui permettent d'avoir une structure **Responsive**, _cad_ qui répond différement selon la taille de l'écran sur lequel le portfolio apparait. Mon Portfolio est ainsi adapté à n'importe quelle taille d'écran, même si certaines informations ne pourront pas apparaitre sur des écran trop petits et sont donc remplacés par des messages indicatifs
 
+## Limitations du nombre de requêtes GET
+Afin de limiter le nombre de requêtes GET :
+* Conversions des différentes images *png* en *webp* via **convertio.co**.
+* Utilisation du plugin **SVGR** afin de ne pas créer de requêtes pour les nombreux fichiers *svg* utilisés.
+
 # Commandes
 
 Lancer en mode developpeur

@@ -1,6 +1,9 @@
 /** Main page of the Portfolio */
 import ButtonImg from "../components/ui/ButtonImg.components.tsx";
 
+import MinutMailerLogo from '../assets/util/minutemailer.svg?react';
+import FilesLogo from '../assets/util/files.svg?react';
+
 function Home() {
   return (
     <main className="page" id="home">
@@ -20,14 +23,14 @@ function Home() {
         projets.
         <div className="home_buttons">
           <ButtonImg
-            img={"util/minutemailer.svg"}
+            Img={MinutMailerLogo}
             id={"contact"}
             classname={"home_button"}
             text={"Me contacter"}
             onSite={true}
           />
           <ButtonImg
-            img={"util/files.svg"}
+            Img={FilesLogo}
             id={"projects"}
             classname="home_button"
             text={"Mes projets"}
