@@ -1,10 +1,12 @@
 /* A Projects Grid to allow user browsing into my projects */
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import projects from "../../assets/data/project.json";
 import ProjectHead from "./ProjectHead.components";
-import closeButton from "../../assets/closeButton.svg";
+import CloseButton from "../../assets/closeButton.svg?react";
 import Flag from "./Flag.components";
 import ButtonImg from "./ButtonImg.components";
+
+import GitHubLogo from '../../assets/util/github.svg?react';
 
 interface Project {
   name: string;
@@ -19,15 +21,9 @@ interface Project {
 }
 
 function ProjectsGrid() {
-  const [svg, setSvg] = useState("");
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  useEffect(() => {
-    fetch(closeButton)
-      .then((res) => res.text())
-      .then(setSvg);
-  }, [closeButton]);
 
   return (
     <div className="projects_grid">
@@ -35,6 +31,7 @@ function ProjectsGrid() {
       <div className="projects_heads">
         {projects.map((project) => (
           <ProjectHead
+            key={project.name}
             name={project.name}
             picture={project.picture}
             onClick={() => {
@@ -51,7 +48,7 @@ function ProjectsGrid() {
           <div className="project_name">
             <h2>{selectedProject?.name}</h2>
           </div>
-          <img src={selectedProject?.picture}></img>
+          <img src={selectedProject?.picture} loading="lazy"></img>
           <div className="project_infos">
             <div className="project_description">
               {selectedProject?.description}
@@ -89,7 +86,7 @@ function ProjectsGrid() {
           </div>
           <div className="project_more_infos">
             <ButtonImg
-              img="util/github.svg"
+              Img={GitHubLogo}
               id={selectedProject ? selectedProject?.link : ""}
               classname="project_link"
               text=""
@@ -104,14 +101,13 @@ function ProjectsGrid() {
           <p>Veuillez augmenter la taille de votre écran si vous voulez en voir plus :)</p>
         </div>
 
-        <div
-          className="close_button hover:cursor-pointer z-10001"
-          onClick={() => {
+        <div className="close_button hover:cursor-pointer z-10001">
+          <CloseButton onClick={() => {
             setSelectedProject(null);
             document.body.style.overflow = "";
-          }}
-          dangerouslySetInnerHTML={{ __html: svg }}
-        ></div>
+          }} />
+        </div>
+
       </div>
     </div>
   );

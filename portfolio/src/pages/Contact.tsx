@@ -2,6 +2,11 @@
 
 import ButtonImg from "../components/ui/ButtonImg.components";
 
+import GitHubLogo from '../assets/util/github.svg?react';
+import MailLogo from '../assets/util/mail.svg?react';
+import LinkedinLogo from '../assets/util/linkedin.svg?react';
+import LocationLogo from '../assets/util/location.svg?react';
+
 function Contact() {
   return (
     <main className="page" id="contact">
@@ -20,14 +25,14 @@ function Contact() {
       </div>
       <div className="contact_buttons">
         <ButtonImg
-          img={"util/github.svg"}
+          Img={GitHubLogo}
           id={"https://github.com/Haku-48"}
           classname={"contact_button"}
           text={"Haku-48"}
           onSite={false}
         />
         <ButtonImg
-          img={"util/mail.svg"}
+          Img={MailLogo}
           id={
             "mailto:guillaumegoetghebeur59@gmail.com?subject=[Portfolio%20Contact]"
           }
@@ -36,14 +41,14 @@ function Contact() {
           onSite={false}
         />
         <ButtonImg
-          img={"util/linkedin.svg"}
+          Img={LinkedinLogo}
           id={"https://www.linkedin.com/in/guillaume-goetghebeur-766a72242/"}
           classname={"contact_button"}
           text={"Guillaume"}
           onSite={false}
         />
         <ButtonImg
-          img={"util/location.svg"}
+          Img={LocationLogo}
           id={"https://maps.app.goo.gl/CT81sjG9fZ61gDgFA"}
           classname={"contact_button"}
           text={"Loos"}

@@ -10,13 +10,13 @@ function ProjectHead({ name, picture, onClick }: ProjectHeadProp) {
   return (
     <div
       className="project_head bg-cover bg-center"
-      style={{ backgroundImage: `url(${picture})` }}
       onClick={onClick}
     >
+      <img src={picture} loading="lazy" alt={name}/>
       <div className="project_head_name">
         <h3>{name}</h3>
       </div>
     </div>
   );
 }
-export default ProjectHead;
+export default ProjectHead; 

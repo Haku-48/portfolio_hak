@@ -6,7 +6,7 @@ function FormationList() {
     <div className="formation_list">
       <h3>{formations.length == 1 ? "Ma formation" : "Mes formations"}</h3>
       {formations.map((formation) => (
-        <div className="formation">
+        <div className="formation" key={formation.name}>
           <div>
             <div className="formation_title">
               <span>{formation.name}</span>, <span>{formation.school}</span>
@@ -16,8 +16,8 @@ function FormationList() {
             </div>
             <div className="formation_goals">
               <ul>
-                {formation.goals.map((goal) => (
-                  <li>{goal}</li>
+                {formation.goals.map((goal, index) => (
+                  <li key={index}>{goal}</li>
                 ))}
               </ul>
             </div>

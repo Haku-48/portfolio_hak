@@ -4,18 +4,18 @@ import SkillItem from "./SkillItem.components";
 
 interface Skill {
   name: string;
-  logo: string;
+  logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   description: string;
   learned: string;
   flag: string;
 }
 
 interface SkillTimelineProp {
-  file: Skill[];
+  list: Skill[];
   setSelectedSkill: (skill: Skill) => void;
 }
 
-function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
+function SkillTimeline({ list, setSelectedSkill }: SkillTimelineProp) {
   const lineRef = useRef<HTMLDivElement>(null);
 
   const [mlHeight, setMlHeight] = useState(0);
@@ -64,10 +64,11 @@ function SkillTimeline({ file, setSelectedSkill }: SkillTimelineProp) {
         className="skill_path_fill"
         style={{ height: mlHeight * 100 + "%" }}
       ></div>
-      {file.map((skill) => (
+      {list.map((skill) => (
         <SkillItem
+          key={skill.name}
           name={skill.name}
-          logo={skill.logo}
+          Logo={skill.logo}
           onClick={() => {
             setSelectedSkill(skill);
             document.body.style.overflow = "hidden";

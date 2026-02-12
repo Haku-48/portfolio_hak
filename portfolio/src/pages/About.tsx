@@ -1,13 +1,14 @@
 /** About page of the Portfolio */
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-import closeButton from "../assets/closeButton.svg";
-import tools from "../assets/data/tool.json";
-import langages from "../assets/data/langage.json";
+
+import tools from "../assets/data/tools.ts";
+import langages from "../assets/data/langages.ts";
+import CloseButton from "../assets/closeButton.svg?react";
 
 interface Skill {
   name: string;
-  logo: string;
+  logo: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   description: string;
   learned: string;
   flag: string;
@@ -19,13 +20,7 @@ import FormationList from "../components/ui/FormationList.components";
 
 function About() {
   const [selectedSkill, setSelectedSkill] = useState<Skill | null>(null);
-  const [svg, setSvg] = useState("");
 
-  useEffect(() => {
-    fetch(closeButton)
-      .then((res) => res.text())
-      .then(setSvg);
-  }, [closeButton]);
 
   return (
     <main className="page" id="about">
@@ -49,14 +44,14 @@ function About() {
         <div className="langages">
           <h3 className="about_subsubtitle">Langages</h3>
           <SkillTimeline
-            file={langages}
+            list={langages as Skill[]}
             setSelectedSkill={(skill) => setSelectedSkill(skill)}
           />
         </div>
         <div className="tools">
           <h3 className="about_subsubtitle">Outils</h3>
           <SkillTimeline
-            file={tools}
+            list={tools as Skill[]}
             setSelectedSkill={(skill) => setSelectedSkill(skill)}
           />
         </div>
@@ -72,14 +67,12 @@ function About() {
 
           <Flag flagType={selectedSkill?.flag} />
 
-          <div
-            className="close_button hover:cursor-pointer"
-            onClick={() => {
+          <div className="close_button hover:cursor-pointer">
+            <CloseButton onClick={() => {
               setSelectedSkill(null);
               document.body.style.overflow = "";
-            }}
-            dangerouslySetInnerHTML={{ __html: svg }}
-          ></div>
+            }} />
+          </div>
         </div>
       </div>
     </main>

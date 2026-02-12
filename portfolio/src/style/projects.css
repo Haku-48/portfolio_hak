@@ -33,11 +33,15 @@
 
 /* A Project Head */
 .project_head {
-  @apply flex items-center justify-center w-40 h-40 border rounded-3xl hover:cursor-pointer text-(--color-secondary) hover:text-(--color-primary);
+  @apply flex relative overflow-hidden items-center justify-center w-40 h-40 border rounded-3xl hover:cursor-pointer text-(--color-secondary) hover:text-(--color-primary) hover:border-4;
+}
+
+.project_head img {
+  @apply w-full h-full object-cover block
 }
 
 .project_head_name {
-  @apply bg-(--color-background) font-bold font-serif rounded-xl w-auto flex items-center justify-center text-xl;
+  @apply bg-(--color-background) font-bold font-serif rounded-xl w-auto flex items-center justify-center text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 px-2 py-1;
 }
 
 /* The selected project */
