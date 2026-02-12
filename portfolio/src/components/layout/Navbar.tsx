@@ -15,8 +15,6 @@ function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   });
 
-  console.log(Logo)
-
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
       <div
