@@ -15,7 +15,7 @@ function Contact() {
       </div>
       <div className="contact_text">
         <p>
-          Si vous souhaitez des informations supplémentaires sur ma personnes où
+          Si vous souhaitez des informations supplémentaires sur ma personne où
           simplement me passer le bonjour, n'hésitez pas à me contacter.
         </p>
         <p>
