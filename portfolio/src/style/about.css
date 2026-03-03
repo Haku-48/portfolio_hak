@@ -85,7 +85,7 @@
 /* Skills */
 
 .skills {
-  @apply flex flex-col justify-center items-center md:flex-row w-full gap-10;
+  @apply flex flex-row justify-center items-center w-full gap-10;
 }
 
 .langages {
@@ -101,7 +101,7 @@
 /* Part of the timeline */
 
 .skills_timeline {
-  @apply relative flex flex-col items-center justify-center gap-10 h-full;
+  @apply relative flex flex-col items-center justify-center gap-7 md:gap-10 h-full;
 }
 
 .skill_path {
@@ -110,7 +110,7 @@
 }
 
 .skill_path_fill {
-  @apply absolute top-0 w-6 z-5 transition-all rounded-4xl;
+  @apply absolute top-0 w-6 z-5 will-change-[height] rounded-4xl;
   background: var(--color-radient-vertical);
   background-size: 100% 300%;
   animation: gradientAnim 3s linear infinite;
@@ -128,7 +128,7 @@
 
 /* Part of a Skill item */
 .skill_item {
-  @apply relative z-10 flex flex-col justify-center items-center gap-2 w-32 h-32 rounded-2xl shadow-xl shadow-gray-900 transition-transform;
+  @apply relative z-10 flex flex-col justify-center items-center gap-2 w-20 h-20 md:w-32 md:h-32 rounded-2xl shadow-xl shadow-gray-900 transition-transform;
   color: var(--color-secondary);
   background-color: var(--color-background);
 }
@@ -152,7 +152,7 @@
 }
 
 .skill_name {
-  @apply font-serif;
+  @apply hidden md:block font-serif;
 }
 
 .more_infos_skill {

@@ -17,52 +17,49 @@ interface SkillTimelineProp {
 
 function SkillTimeline({ list, setSelectedSkill }: SkillTimelineProp) {
   const lineRef = useRef<HTMLDivElement>(null);
-
-  const [mlHeight, setMlHeight] = useState(0);
+  const fillRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (lineRef.current) {
-      let rect = lineRef.current.getBoundingClientRect();
-      let top = rect.top + window.scrollY;
-      let height = rect.height;
-      const compute = () => {
-        return (window.scrollY + window.innerHeight / 2 - top) / height;
-      };
-
-      if (compute() >= 0 && compute() <= 1) {
-        setMlHeight(compute());
-      }
-
-      const onScroll = () => {
-        const computed = compute();
-        if (computed >= 0 && computed <= 1) {
-          setMlHeight(computed);
-        }
-      };
-
-      const computeSize = () => {
-        if (lineRef.current) {
-          rect = lineRef.current.getBoundingClientRect();
-          top = rect.top + window.scrollY;
-          height = rect.height;
-        }
-      };
-
-      window.addEventListener("resize", computeSize);
-      window.addEventListener("scroll", onScroll);
-      return () => {
-        window.removeEventListener("scroll", onScroll);
-        window.removeEventListener("resize", computeSize);
-      };
+    if (!lineRef.current || !fillRef.current) {
+      return
     }
-  }, [lineRef]);
+    let rect = lineRef.current.getBoundingClientRect();
+    let top = rect.top + window.scrollY;
+    let height = rect.height;
+
+    const computeSize = () => {
+
+      rect = lineRef.current!.getBoundingClientRect();
+      top = rect.top + window.scrollY;
+      height = rect.height;
+
+    };
+
+
+    const onScroll = () => {
+      const progress = (window.scrollY + window.innerHeight / 2 - top) / height;
+      if (progress >= 0 && progress <= 1) {
+        fillRef.current!.style.height = progress * 100 + "%";
+      }
+    };
+
+
+
+    window.addEventListener("resize", computeSize);
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", computeSize);
+    };
+  }
+    , []);
 
   return (
     <div className="skills_timeline">
       <div className="skill_path" ref={lineRef}></div>
       <div
         className="skill_path_fill"
-        style={{ height: mlHeight * 100 + "%" }}
+        ref={fillRef}
       ></div>
       {list.map((skill) => (
         <SkillItem
