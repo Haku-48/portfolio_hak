@@ -4,7 +4,7 @@
 
 /* Main Title */
 h1.main_title {
-  @apply m-5 text-7xl md:text-9xl font-bold h-70 w-min whitespace-normal indent-8;
+  @apply md:m-5 text-6xl md:text-9xl font-bold h-40 md:h-70 w-min whitespace-normal indent-8 mt-10 md:mt-12;
 }
 
 @supports (-webkit-background-clip: text) {
@@ -32,7 +32,7 @@ h1.main_title {
 }
 
 .sentence {
-  @apply p-5 m-5 pl-10 text-2xl md:text-4xl font-mono;
+  @apply md:p-5 md:m-5 pl-10 text-2xl md:text-4xl font-mono;
 }
 
 #hero {

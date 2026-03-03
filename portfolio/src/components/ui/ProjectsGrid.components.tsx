@@ -44,7 +44,7 @@ function ProjectsGrid() {
       <div
         className={`project_selected ${selectedProject ? "block" : "hidden"}`}
       >
-        <div className={`project_more hidden lg:block`}>
+        <div className={`project_more`}>
           <div className="project_name">
             <h2>{selectedProject?.name}</h2>
           </div>
@@ -94,11 +94,6 @@ function ProjectsGrid() {
             />
             <Flag flagType={selectedProject?.flag} />
           </div>
-        </div>
-
-        <div className="error block lg:hidden">
-          <p>Ecran trop petit pour afficher les détails du projet</p>
-          <p>Veuillez augmenter la taille de votre écran si vous voulez en voir plus :)</p>
         </div>
 
         <div className="close_button hover:cursor-pointer z-10001">

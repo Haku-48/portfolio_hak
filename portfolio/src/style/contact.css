@@ -14,7 +14,7 @@
 
 /* Text */
 .contact_text {
-  @apply m-15 gap-15;
+  @apply md:m-15 gap-15 ;
 }
 
 .contact_text p {
@@ -23,5 +23,9 @@
 
 /* buttons */
 .contact_buttons {
-  @apply flex flex-col md:flex-row items-center justify-center gap-10;
+  @apply flex flex-row items-center justify-center gap-10 mb-15;
+}
+
+.contact_button {
+  @apply hidden md:block
 }
