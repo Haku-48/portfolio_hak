@@ -71,7 +71,7 @@ html {
 }
 
 .nav_button_list > .nav_button {
-  @apply bg-[var(--color-accent)] md:bg-[var((--color-background))]
+  @apply bg-[var(--color-accent)] md:bg-[var(--color-background)]
 }
 
 .logo_img {
