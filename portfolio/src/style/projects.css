@@ -28,7 +28,7 @@
 
 /* Projects Heads */
 .projects_heads {
-  @apply w-full pl-2 grid grid-cols-[repeat(auto-fit,minmax(210px,1fr))] gap-5 md:gap-10;
+  @apply w-full pl-2 grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(210px,1fr))] gap-5 md:gap-10;
 }
 
 /* A Project Head */
