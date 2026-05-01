@@ -1,5 +1,5 @@
 // The timeline that will represents all of the skills
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import SkillItem from "./SkillItem.components";
 
 interface Skill {
