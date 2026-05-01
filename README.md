@@ -24,6 +24,13 @@ Afin de limiter le nombre de requêtes GET :
 
 # Commandes
 
+Installer les dépendances
+
+```bash
+npm install
+```
+
+
 Lancer en mode developpeur
 
 ```bash

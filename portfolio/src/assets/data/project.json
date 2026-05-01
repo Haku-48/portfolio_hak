@@ -69,11 +69,33 @@
     "name": "Portfolio",
     "picture": "projects/portfolio.webp",
     "description": "Vous êtes dessus !",
-    "start": "01/2025",
-    "end": "02/2025",
+    "start": "01/2026",
+    "end": "02/2026",
     "langages": ["TypeScript"],
     "tools": ["Vite", "TailwindCSS", "Node.js", "React"],
     "link": "https://github.com/Haku-48/portfolio_hak",
     "flag": "Temps-Libre"
+  },
+  {
+    "name" : "SellYoursApp",
+    "picture" : "projects/sellyoursapp.webp",
+    "description" : "Site de vente entre particuliers",
+    "start" : "03/2026",
+    "end" : "04/2026",
+    "langages" : ["JavaScript", "CSS", "HTML"],
+    "tools" : ["Vite", "Node.js", "React", "Socket.io", "MongoDB"],
+    "link" : "https://github.com/Haku-48/sellyoursapp",
+    "flag" : "École"
+  },
+  {
+    "name" : "Blindtest-Multi",
+    "picture" : "projects/blindtest-multi.webp",
+    "description" : "Site de blindtest permettant aux joueurs de faire deviner leurs extraits à leurs amis",
+    "start" : "04/2026",
+    "end" : "04/2026",
+    "langages" : ["TypeScript", "CSS"],
+    "tools" : ["Vite", "Node.js", "React", "Socket.io"],
+    "link" : "https://github.com/Haku-48/BlindTest-multi",
+    "flag" : "Temps-Libre"
   }
 ]
